@@ -1,0 +1,42 @@
+{
+    "name": "automation-task",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test:all": "npx playwright test",
+        "test:register": "npx playwright test tests/automation-exercise/Registration/create_registration.spec.ts",
+        "test:register:headed": "npx playwright test tests/automation-exercise/Registration/create_registration.spec.ts --headed",
+        "test:register:debug": "npx playwright test tests/automation-exercise/Registration/create_registration.spec.ts --debug",
+        "test:cart": "npx playwright test tests/automation-exercise/ProductSearchAndCart/search_and_add_to_cart.spec.ts",
+        "test:cart:headed": "npx playwright test tests/automation-exercise/ProductSearchAndCart/search_and_add_to_cart.spec.ts --headed",
+        "test:cart:debug": "npx playwright test tests/automation-exercise/ProductSearchAndCart/search_and_add_to_cart.spec.ts --debug",
+        "test:login": "npx playwright test tests/automation-exercise/LoginLogout/login_and_logout.spec.ts",
+        "test:login:headed": "npx playwright test tests/automation-exercise/LoginLogout/login_and_logout.spec.ts --headed",
+        "test:login:debug": "npx playwright test tests/automation-exercise/LoginLogout/login_and_logout.spec.ts --debug"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@faker-js/faker": "^8.4.1",
+        "@playwright/test": "^1.49.0",
+        "@types/node": "^20.12.12",
+        "@typescript-eslint/eslint-plugin": "^5.59.2",
+        "@typescript-eslint/parser": "^5.59.2",
+        "allure-playwright": "^3.0.0-beta.2",
+        "cross-env": "^7.0.3",
+        "dotenv": "^16.5.0",
+        "eslint": "^8.39.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-config-standard": "^17.0.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-n": "^15.7.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-promise": "^6.1.1",
+        "playwright": "^1.49.0",
+        "prettier": "^2.8.8",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.7.2"
+    }
+}
